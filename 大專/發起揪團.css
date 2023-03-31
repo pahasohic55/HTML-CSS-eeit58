@@ -1,0 +1,54 @@
+:root,
+[data-bs-theme=light] {
+--bs-tertiary-bg-rgb:255,255,255;/* 導覽列背景顏色 */
+--bs-link-color:#000000;  /* 導覽列文字顏色 */
+}
+.navbar{
+    --bs-navbar-brand-font-size:1.25rem;/* LOGO字體大小 */
+    
+}
+.nav-link {
+    --bs-nav-link-font-size:20px;/* 導覽列文字大小 */
+}
+.container{
+    margin-top: 50px;/* margin外邊距 */
+    width: 1500px;
+    height: 600px;
+    background-color: rgb(117, 117, 117);
+    
+}
+.GroupName{
+    padding-top: 30px;/* padding內邊距 */
+    padding-left: 550px;
+    justify-content: center;/* 對齊置中 */
+}
+.container2{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;/* 對齊置中 */
+}
+
+.formfile{
+    background-color: rgb(215, 214, 141);
+    width: 600px;
+    height: 400px;
+}
+.btnGroup{
+    display: flex;
+    justify-content: space-around;/* 平均分配寬度和間距 */
+    margin-top: 50px;/* margin外邊距 */
+}
+.btn2{
+    display: flex;
+    justify-content: space-around;
+}
+.btn2 > div{
+    margin-right: 150px;/* 按鈕間距 */
+    
+}
+.place{
+    display:block;
+}
+.member{
+    color: red;
+}

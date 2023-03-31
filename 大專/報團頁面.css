@@ -1,0 +1,15 @@
+:root,
+[data-bs-theme=light] {
+--bs-tertiary-bg-rgb:255,255,255;/* 導覽列背景顏色 */
+--bs-link-color:#000000;  /* 導覽列文字顏色 */
+}
+.navbar{
+    --bs-navbar-brand-font-size:1.25rem;/* LOGO字體大小 */
+    
+}
+.nav-link {
+    --bs-nav-link-font-size:20px;/* 導覽列文字大小 */
+}
+.card{
+    display: inline-block;
+}

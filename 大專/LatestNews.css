@@ -1,0 +1,111 @@
+*{/* 位置滿版 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#ffffff;
+}
+.main-header{
+    position:sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1;/* 將導覽列的層級設為1就不會被輪播圖覆蓋 */
+    
+}
+.main-header .Logo{
+    width: 50px;
+    display: flex;/* 並排Logo & 文字 */
+    text-decoration: none;/* 連結去底線 */
+    font-family:Franklin Gothic Medium;/* 字型 */
+}
+.main-header .Logo img{
+    width: 100%;
+    vertical-align: middle;/* 垂直對齊：中間 */
+}
+.Logo h2{
+    margin-left: 5px;
+    font-size: 2em;
+    color: #000000;
+    text-shadow: 2px 0px 0px #f6a122;/* 文字外框 */
+}
+.container{
+    display: flex;/* 並排 */
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;/* 將覽導列自動放到正中間 */
+    align-items: center;/* 容器內所有項目對齊中間 */
+    background-color:#ffffff;/* 導覽列顏色 */
+    text-shadow: 0px 0px 1px #ffffff;/* 文字外框 */
+}
+.navbar{
+    margin: auto;/* 把空間分配給類別內的值 */
+    font-size: 20px;
+    font-weight: bold;/* 粗體文字 */
+    
+}
+.navbar a{
+    text-decoration: none;/* 連結去底線 */
+    padding-left: 30px;/* 連結的左邊空間+30px */
+    padding-right: 30px;/* 連結的右邊空間+30px */
+    color: rgb(0, 0, 0);
+    
+}
+
+.navbar a:hover{
+    border-bottom:5px solid #FFDEAD;
+}
+
+.latestNews-container{
+    display: flex;
+    width: 100%;
+}
+.latestNews-group{
+    margin: 10px;
+    width: 100%;
+    
+}
+
+.latestNews-group img{
+    width: 100%;
+}
+footer {
+    background-color: #ffefde;
+    padding: 20px;
+    text-align: center;/* 文字置中 */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;/* 文字並排 */
+  }
+  
+  .footer-section {
+    flex-basis: 23%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #000;
+  }
