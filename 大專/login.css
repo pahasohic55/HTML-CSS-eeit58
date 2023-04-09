@@ -1,18 +1,24 @@
 *{/* 位置滿版 */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background-color:#ffffff;
+  box-sizing: border-box; 
 }
 /* 導覽列 */
 .main-header{
   position:fixed;
   top: 0px;
   width: 100%;
-  z-index: 1;/* 將導覽列的層級設為1就不會被輪播圖覆蓋 */
-  
+  z-index: 999;/* 將導覽列的層級 */
+}
+.container{
+  display: flex;/* 並排 */
+  padding: 5px;
+  padding-right: 0px;
+  max-width: 100%;
+  margin: auto;/* 將覽導列自動放到正中間 */
+  align-items: center;/* 容器內所有項目對齊中間 */
+  background-color: rgba(130, 130, 130, 0.8);/* 導覽列透明0~1之間 */
+  text-shadow: 0px 0px 1px #ffffff;/* 文字外框 */
 }
 .main-header .Logo{
   width: 50px;
@@ -27,59 +33,52 @@ body{
 .Logo h2{
   margin-left: 5px;
   font-size: 2em;
-  color: #000000;
+  color: #ffffff;
   text-shadow: 2px 0px 0px #f6a122;/* 文字外框 */
 }
-.container{
-  display: flex;/* 並排 */
-  padding: 20px;
-  max-width: 100%;
-  margin: auto;/* 將覽導列自動放到正中間 */
-  align-items: center;/* 容器內所有項目對齊中間 */
-  background-color: rgba(222, 222, 222, 0.4);/* 導覽列透明0~1之間 */
-  text-shadow: 0px 0px 1px #ffffff;/* 文字外框 */
-}
-.navbar{
+
+.navbar-text{
   margin: auto;/* 把空間分配給類別內的值 */
-  font-size: 20px;
-  font-weight: bold;/* 粗體文字 */
-  
+  font-size: 24px;
+  font-family: 'Noto Sans JP', sans-serif;/* 預設樣式中文字 */
 }
-.navbar a{
+
+.navbar-text a{
+  border-radius: 20px;/* 邊框圓弧度 */
+  text-shadow: 1px 1px 0 rgb(4, 4, 4); /* 设置文字陰影，颜色為红色，水平偏移量為 1 像素，垂直偏移量為 1 像素 */
   text-decoration: none;/* 連結去底線 */
   padding-left: 30px;/* 連結的左邊空間+30px */
   padding-right: 30px;/* 連結的右邊空間+30px */
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
-.navbar a:hover{
-  border-bottom:5px solid #FFDEAD;
+.navbar-text a:hover{
+  border: 1px solid #ffe2d3cb; /* 設置邊框為 1 像素實線黑色 */
+  background-color: rgb(147, 147, 147);
+  color: #ffffff;
 }
-.container ul{
-  list-style-type: none;/* 去標記點 */
-  display: flex;
-  margin-bottom: 0;
+.navbar-nav{
+  margin-right: 70px;
 }
-.container ul li{
-  margin: 10px;
-}
-.container ul li a{
-  text-decoration: none;/* 連結去底線 */
-  color: #000000;
-  font-weight: bold;/* 粗體文字 */
-}
+/* ------------------------ */
   body{
     background-image:url(./Images/img13.jpg);/* 將圖片設成背景 */
     background-size: cover;  /* 背景圖片按比例放大，填滿整個元素 */
     background-repeat: no-repeat;  /* 防止背景圖片重複顯示 */
-    display: flex;/* 將登入框設定到最中間 */
-    justify-content: center;/* 水平置中 */
-    align-items: center;/* 垂直置中 */
     height: 100vh;/* 使body元素佔據整個視窗高度,1vh等於視窗高度的1% */
+    
   }
-  
-  .login{
+  .wrapper{
+    position:relative;/* 父元素 */
+    display: flex;/* 設定到最中間 */
+    justify-content: center;/* 水平置中 */
+    top: 100px;
+    transition: height .2s ease;/* transition過渡0.2秒緩衝 */
+    
+  }
+  .container-login{/* 登入外框 */
+    position: absolute;/* 子元素 */
     width: 600px;
-    height: 500px;
+    height: 550px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;/* 邊框圓弧度 */
     border: 10px solid #fff;/* 邊框 */
@@ -88,13 +87,36 @@ body{
     display: flex;/* 設定到最中間 */
     justify-content: center;/* 水平置中 */
     align-items: center;/* 垂直置中 */
+    margin-top: 10px;
+    overflow: hidden;/* 登入超出視窗隱藏 */
+  }
+  .wrapper .active{
+    height: 700px;
+    
+  }
+  .wrapper .active .login{
+    transition: none;/* 不顯示 */
+    transform: translateX(-550px);
+  }
+  /* ------登入畫面------ */
+  .login{
+    transition: transform .2s ease;/* transition過渡0.2秒緩衝 */
+    transform:  translateX(550);/* transform轉換 */
   }
   .form{
     width: 400px;
     color: #fff;
   }
+  .form h1{
+    margin-bottom: 50px;
+    font-family:Franklin Gothic Medium;/* 字型 */
+    font-family: 'Noto Sans JP', sans-serif;/* 預設樣式中文字 */
+  }
   .form h2{
-    margin-bottom: 20px;
+    margin-top: -10px ;
+    margin-bottom: 40px;
+    font-family:Franklin Gothic Medium;/* 字型 */
+    font-family: 'Noto Sans JP', sans-serif;/* 預設樣式中文字 */
   }
   .form input{
     width: 100%;
@@ -109,7 +131,7 @@ body{
   .form .btn-group{
     margin-top: 30px;
   }
-  .form .btn{
+  .form button{
     font-size: 20px;
     border-radius: 5px;/* 邊框圓弧度 */
     border: none;/* 去邊框 */
@@ -119,17 +141,39 @@ body{
     color:#fff;
     
   }
-  .form .btn + .btn{
+  .form button + button{
     margin-left: 15px;
-    
   }
-  .form .btn:hover{
+  .form button:hover{
     background-color: #FFDEAD;
   }
-  .register{
+  .form p{
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
+  }
+  .form p a{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFDEAD;
+  }
+  .form p a:hover{
+    border-bottom:3px solid #FFDEAD;
+  }
+
+  /* ------註冊畫面------ */
+  .register{
+    position: absolute;/* 子元素 */
+    transform: translateX(550px);
+    transition: none;
+    /* display: none;   */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .wrapper .active .register{
+    transition: transform .2s ease;/* transition過渡0.2秒緩衝 */
+    transform:  translateX(0);/* transform轉換 */
   }
   .register a{
     margin-left: 10px;
@@ -140,15 +184,5 @@ body{
   .register a:hover{
     border-bottom:3px solid #FFDEAD;
   }
-  .form .logo{
-    position: absolute;
-    display: flex;
-    top: 3ch;
-    right: 30%;
-  }
-  .form .logo p{
-    margin: auto;
-    font-weight: bold;
-    font-size: 20px;
-  }
+  
   
