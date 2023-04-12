@@ -50,6 +50,7 @@
     margin-bottom: 50px;
     font-family:Franklin Gothic Medium;/* 字型 */
     font-family: 'Noto Sans JP', sans-serif;/* 預設樣式中文字 */
+    text-align: center;
   }
   .form h2{
     margin-top: -10px ;
