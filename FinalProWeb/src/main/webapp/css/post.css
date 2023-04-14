@@ -1,5 +1,8 @@
 body{
-    background-color:#ffffff;
+    background-image:url(../Images/img10.jpg);/* 將圖片設成背景 */
+    background-size: cover;  /* 背景圖片按比例放大，填滿整個元素 */
+    background-repeat: no-repeat;  /* 防止背景圖片重複顯示 */
+    height: 100vh;/* 使body元素佔據整個視窗高度,1vh等於視窗高度的1% */
 }
 
 .container-post{
@@ -13,9 +16,18 @@ body{
     border-radius: 20px;/* 邊框圓弧度 */
 }
 .GroupName{
-    padding-top: 30px;/* padding內邊距 */
+    padding-top: 60px;/* padding內邊距 */
     padding-left: 550px;
     justify-content: center;/* 對齊置中 */
+    
+}
+.GroupName .activityTitle{
+    height: 60px;
+    width: 600px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
 }
 .post-area{
     display: flex;

@@ -1,6 +1,6 @@
 /* login */
   body{
-    background-image:url(../Images/img13.jpg);/* 將圖片設成背景 */
+    background-image:url(../Images/img10.jpg);/* 將圖片設成背景 */
     background-size: cover;  /* 背景圖片按比例放大，填滿整個元素 */
     background-repeat: no-repeat;  /* 防止背景圖片重複顯示 */
     height: 100vh;/* 使body元素佔據整個視窗高度,1vh等於視窗高度的1% */

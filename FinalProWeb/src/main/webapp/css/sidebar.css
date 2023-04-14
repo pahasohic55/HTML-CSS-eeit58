@@ -2,9 +2,15 @@
 /*           sidebar             */
 /*-------------------------------*/
 body {
+  margin: 0;
+  padding: 0;
   position: relative;
   overflow-x: hidden;
-  background-color: #CFD8DC;
+  background-image:url(../Images/img10.jpg);/* 將圖片設成背景 */
+  background-size: cover;  /* 背景圖片按比例放大，填滿整個元素 */
+  background-repeat: no-repeat;  /* 防止背景圖片重複顯示 */
+  height: 100vh;/* 使body元素佔據整個視窗高度,1vh等於視窗高度的1% */
+  width: 1200px;
 }
 
 /*-------------------------------*/
@@ -339,10 +345,10 @@ display: block;
   height: 100vh; /* 也可以使用固定高度 */
 }
 .PI{
-  background-color: #fff;
+  background-color:rgb(254, 254, 254);
   position: absolute;/* 子元素 */
   width: 1600px;
-  height: 850px;
+  height: 800px;
   left: 100px;
   justify-content: center;/* 水平置中 */
   align-items: center;/* 垂直置中 */
@@ -373,16 +379,20 @@ display: block;
   height: 100%;
   width: 1200px;
   left: 400px;
+  background-color: rgb(135, 195, 248);
 }
 .member{
   position: absolute;
   height: 650px;
   width: 1100px;
   margin: 50px;
-  background-color: rgb(135, 195, 248);
+  background-color: rgb(255, 255, 255);
   border:1px solid ;
   font-family: 'Noto Sans HK', sans-serif;
   font-size: 20px;
+}
+.member-PI{
+  /* 會員資料單獨用 */
   top: 50px;
 }
 .member .project label{
@@ -401,4 +411,27 @@ display: block;
 .btn-group button{
   margin-right: 100px;
   border-radius: 10px;
+}
+
+.container-calendar{
+  position: relative;/* 父元素 */
+  justify-content: center;/* 水平置中 */
+  align-items: center;/* 垂直置中 */
+  display: flex;
+  height: 100vh; /* 也可以使用固定高度 */
+  width: 1200px;
+  height: 900px;
+  left: 400px;
+  top: 50px;
+  background-color: #1a1a1a;
+}
+.container-calendar .calendar {
+  background-color:rgb(254, 254, 254);
+  position: absolute;/* 子元素 */
+  width: 100%;
+  height: 100%;
+  justify-content: center;/* 水平置中 */
+  align-items: center;/* 垂直置中 */
+  border:1px solid ;
+  
 }
