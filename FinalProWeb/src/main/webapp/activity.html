@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>發起揪團</title>
+    <title>活動資料</title>
     <!-- 響應式網站 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Boostrap 導入程式 -->
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/navbar&footer.css">
     <!-- MDB頭像 -->
     <script type="text/javascript" src="./Js/mdb.min.js"></script>
+
 </head>
 
 <body>
@@ -76,16 +77,15 @@
             <!--Image-->
             <div class="post-Image">
                 <div class="mb-4 d-flex justify-content-center">
-                    <img src="./Images/image.png" alt="example placeholder" id="pic"
-                        style="width: 600px;height: 400px;" />
+                    <img src="./Images/logo.png" alt="example placeholder" id="pic" style="width: 600px;height: 400px;" />
                 </div>
             </div>
             <!-- 文字表單 -->
             <div class="formfile">
                 <form action="">
                     <div class="location">
-                        <label for="">地點 :</label>
-                        <select id="city" name="city">
+                        <label for="">地點 :</label> 
+                        <select id="city" name="">
                             <option>請選擇你想參與的地點</option>
                             <option value="">基隆</option>
                             <option value="">宜蘭</option>
@@ -108,34 +108,25 @@
                             <option value="">金門</option>
                             <option value="">連江</option>
                         </select>
-                        <select id="dist" name="dist">
+                        <select id="dist" name="">
                             <option>中區</option>
                         </select>
-                        <input type="text" id="location" name="location" placeholder="大源路100號">
+                        <input type="text" id="location" placeholder="大源路100號">
                     </div>
                     <div>
                         <label for="activityTime">活動時間 :</label>
-                        <input type="datetime-local" name="activityTime" id="activityTime">
-
                     </div>
                     <div>
                         <label for="">最晚審核時間 :</label>
-                        <input type="datetime-local" name="" id="">
                     </div>
                     <div>
                         <label for="min">最低人數 :</label>
-                        <input class="form-control" id="min" name="min" type="text" placeholder="最低人數"
-                            aria-label="default input example">
                     </div>
                     <div>
                         <label for="max">人數上限 :</label>
-                        <input class="form-control" id="max" name="max" type="text" placeholder="人數上限"
-                            aria-label="default input example">
                     </div>
                     <div>
                         <label for="contact">聯絡方式 :</label>
-                        <input class="form-control" id="contact" name="contact" type="text" placeholder="聯絡方式"
-                            aria-label="default input example">
                     </div>
                     <div>
                         <label>場地預約 :</label>
@@ -148,10 +139,10 @@
                             <input class="form-check-input" id="inlineRadio2" name="inlineRadioOptions" type="radio">
                         </div>
                     </div>
-
+                    
                     <div>
                         <label>等級推薦 :</label>
-
+                        
                         <div class="form-check form-check-inline">
                             <label class="form-check-label" for="inlineCheckbox1">初級</label>
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -178,19 +169,13 @@
             </div>
         </div>
         <div class="btnGroup">
-            <div class="d-flex justify-content-center">
-                <div class="btn btn-primary btn-rounded">
-                    <label class="form-label text-white m-1" for="customFile1">上傳圖片</label>
-                    <input type="file" class="form-control d-none" id="customFile1" />
-                </div>
-            </div>
+            
             <div class="btn2">
-                <div><button type="submit">確認發文</button></div>
-                <div><a href="./index.html"><button>取消發文</button></a></div>
+                <div><button type="submit">我要報團</button></div>
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

@@ -359,6 +359,10 @@ display: block;
   top: 100px;
   left: 100px;
 }
+.member-avatar .text-center img{
+  /* 將圖片框變為圓形 */
+  border-radius: 50%;
+}
 .select{/* 更換頭像按鈕 */
   position: absolute;
   left: 10px;

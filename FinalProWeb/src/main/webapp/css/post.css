@@ -2,14 +2,14 @@ body{
     background-color:#ffffff;
 }
 
-.container2{
-    position:relative;/* 相對定位  父元素 */
-    margin-top: 50px;/* margin外邊距 */
-    width: 1500px;
-    height: 700px;
+.container-post{
+    position:fixed;/* 相對定位  父元素 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/* 將 <div> 元素向左和向上移動自身的 50%，實現水平和垂直居中 */
+    width: 1200px;
+    height: 550px;
     background-color: rgb(117, 117, 117);
-    top: 100px;
-    left: 270px;
     border-radius: 20px;/* 邊框圓弧度 */
 }
 .GroupName{
@@ -17,7 +17,7 @@ body{
     padding-left: 550px;
     justify-content: center;/* 對齊置中 */
 }
-.container3{
+.post-area{
     display: flex;
     padding-top: 20px;
     justify-content: center;/* 對齊置中 */
