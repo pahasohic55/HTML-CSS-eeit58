@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>發起揪團</title>
+    <link rel="shortcut" href="favicon.ico">
     <!-- 響應式網站 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Boostrap 導入程式 -->
@@ -12,15 +13,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <!-- 中文字型樣式 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Noto+Sans+JP:wght@700&family=Noto+Sans+TC:wght@900&display=swap"
-        rel="stylesheet">
     <!-- 連結CSS外部檔案 -->
     <link rel="stylesheet" href="./css/post.css">
     <link rel="stylesheet" href="./css/navbar&footer.css">
+    <!-- 連結Js外部檔案 -->
+    <script src="./Js/fontlink.js"></script>
     <!-- MDB頭像 -->
     <script type="text/javascript" src="./Js/mdb.min.js"></script>
 </head>
@@ -69,16 +66,15 @@
     <div class="container-post">
         <!-- 團名 -->
         <div class="GroupName">
-            <input type="text" placeholder="團名 : 活動名稱" class="activityTitle" id="activityTitle" name="">
+            <input type="text" placeholder="  團名 : 活動名稱  " class="activityTitle" id="activityTitle" name="">
         </div>
         <!-- 圖 & 文字說明 -->
         <div class="post-area">
             <!--Image-->
             <div class="post-Image">
-                <div class="mb-4 d-flex justify-content-center">
-                    <img src="./Images/image.png" alt="example placeholder" id="pic"
-                        style="width: 600px;height: 400px;" />
-                </div>
+                <form action="/somewhere/to/upload" enctype="multipart/form-data">
+                    <img id="preview_progressbarTW_img" src="./Images/image.png"/>
+                </form>
             </div>
             <!-- 文字表單 -->
             <div class="formfile">
@@ -86,7 +82,7 @@
                     <div class="location">
                         <label for="">地點 :</label>
                         <select id="city" name="city">
-                            <option>請選擇你想參與的地點</option>
+                            <option>選擇您想參與的縣市</option>
                             <option value="">基隆</option>
                             <option value="">宜蘭</option>
                             <option value="">台北</option>
@@ -119,22 +115,22 @@
 
                     </div>
                     <div>
-                        <label for="">最晚審核時間 :</label>
-                        <input type="datetime-local" name="" id="">
+                        <label for="deadline">最晚審核時間 :</label>
+                        <input type="datetime-local" class="deadline" name="deadline" id="deadline">
                     </div>
-                    <div>
+                    <div style="display: flex;">
                         <label for="min">最低人數 :</label>
-                        <input class="form-control" id="min" name="min" type="text" placeholder="最低人數"
+                        <input class="form-control inputbox" id="min" name="min" type="text" placeholder="最低人數"
                             aria-label="default input example">
                     </div>
-                    <div>
+                    <div style="display: flex;">
                         <label for="max">人數上限 :</label>
-                        <input class="form-control" id="max" name="max" type="text" placeholder="人數上限"
+                        <input class="form-control inputbox" id="max" name="max" type="text" placeholder="人數上限"
                             aria-label="default input example">
                     </div>
-                    <div>
+                    <div style="display: flex;">
                         <label for="contact">聯絡方式 :</label>
-                        <input class="form-control" id="contact" name="contact" type="text" placeholder="聯絡方式"
+                        <input class="form-control inputbox" id="contact" name="contact" type="text" placeholder="聯絡方式"
                             aria-label="default input example">
                     </div>
                     <div>
@@ -178,12 +174,7 @@
             </div>
         </div>
         <div class="btnGroup">
-            <div class="d-flex justify-content-center">
-                <div class="btn btn-primary btn-rounded">
-                    <label class="form-label text-white m-1" for="customFile1">上傳圖片</label>
-                    <input type="file" class="form-control d-none" id="customFile1" />
-                </div>
-            </div>
+            <input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png" >
             <div class="btn2">
                 <div><button type="submit">確認發文</button></div>
                 <div><a href="./index.html"><button>取消發文</button></a></div>

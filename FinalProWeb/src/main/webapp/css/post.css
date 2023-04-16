@@ -3,42 +3,51 @@ body{
     background-size: cover;  /* 背景圖片按比例放大，填滿整個元素 */
     background-repeat: no-repeat;  /* 防止背景圖片重複顯示 */
     height: 100vh;/* 使body元素佔據整個視窗高度,1vh等於視窗高度的1% */
+    font-size: 20px;
 }
 
 .container-post{
-    position:fixed;/* 相對定位  父元素 */
-    top: 50%;
+    position:fixed;
+    top:55%;
     left: 50%;
     transform: translate(-50%, -50%);/* 將 <div> 元素向左和向上移動自身的 50%，實現水平和垂直居中 */
-    width: 1200px;
-    height: 550px;
-    background-color: rgb(117, 117, 117);
+    width: 1300px;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;/* 邊框圓弧度 */
 }
 .GroupName{
     padding-top: 60px;/* padding內邊距 */
     padding-left: 550px;
-    justify-content: center;/* 對齊置中 */
-    
 }
 .GroupName .activityTitle{
     height: 60px;
     width: 600px;
     left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    background-color: aqua;
+    transform: translate(-50%, -20px);
 }
 .post-area{
+    height: 550px;
     display: flex;
-    padding-top: 20px;
     justify-content: center;/* 對齊置中 */
+    background-color: aliceblue;
 }
-
-.formfile{
-    background-color: rgb(215, 214, 141);
-    width: 600px;
+.post-Image{
+    height: 550px;
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+}
+.post-Image img{
+    height: 550px;
+    width: 650px;
+}
+.post-area .formfile{
+    background-color: rgb(255, 175, 94,0.9);
+    width: 50%;
     height: 400px;
+}
+.formfile .inputbox{
+    width: 509px;
 }
 .btnGroup{
     display: flex;

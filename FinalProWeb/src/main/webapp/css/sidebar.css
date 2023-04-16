@@ -122,7 +122,7 @@ margin-right: 10px;
   color: #ddd;
   text-decoration: none;
   font-size: 20px;
-  font-family: 'Noto Sans JP', sans-serif;/* 預設樣式中文字 */
+  font-family: 'Noto Sans HK', sans-serif;/* 預設樣式中文字 */
   padding: 15px 15px 15px 30px;    
 }
 
@@ -139,7 +139,7 @@ margin-right: 10px;
 .sidebar-header {
   text-align: center;
   font-size: 24px;
-  font-family: 'Noto Sans JP', sans-serif;/* 預設文字樣式 */
+  font-family: 'Noto Sans HK', sans-serif;/* 預設文字樣式 */
   position: relative;
   width: 100%;
   display: inline-block;
@@ -155,6 +155,7 @@ margin-right: 10px;
   background:#212531;
   background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
   padding-top: 0.75em;
+  font-family: 'Noto Sans HK', sans-serif;
 }
 .sidebar-brand a {
   color: #ddd;
@@ -185,7 +186,7 @@ margin-right: 10px;
 }
 /*圖標&文字*/
 .nav.sidebar-nav li a::before {
-  font-family: fontawesome;
+  font-family: fontawesome;/* 勿動 */
   content: "\f12e";
   vertical-align: baseline;
   display: inline-block;
