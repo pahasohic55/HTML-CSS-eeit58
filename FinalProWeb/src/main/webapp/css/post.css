@@ -15,6 +15,10 @@ body{
     height: 800px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;/* 邊框圓弧度 */
+    border:5px solid rgb(255, 255, 255);
+}
+.container-post button{
+    border-radius: 10px;/* 邊框圓弧度 */
 }
 .GroupName{
     padding-top: 60px;/* padding內邊距 */
@@ -25,6 +29,9 @@ body{
     width: 600px;
     left: 50%;
     transform: translate(-50%, -20px);
+}
+.GroupName input{
+    border-radius: 10px;/* 邊框圓弧度 */
 }
 .post-area{
     height: 550px;
@@ -42,12 +49,16 @@ body{
     width: 650px;
 }
 .post-area .formfile{
+    position: relative;/* 父元素 */
     background-color: rgb(255, 175, 94,0.9);
     width: 50%;
-    height: 400px;
+    height: 100%;
+}
+.formfile div{
+    margin-top: 12px;
 }
 .formfile .inputbox{
-    width: 509px;
+    width: 85%;
 }
 .btnGroup{
     display: flex;
@@ -62,9 +73,17 @@ body{
     margin-right: 150px;/* 按鈕間距 */
     
 }
-.place{
-    display:block;
+.joinBtn{
+    display: flex;
+    justify-content: space-around;/* 平均分配寬度和間距 */
+    margin-top: 30px;/* margin外邊距 */
 }
-.member{
-    color: red;
+.joinBtn button{
+    width: 150px;
+    height: 50px;
+}
+.mb-3{
+    position: absolute;/* 子元素 */
+    width: 100%;
+    bottom: -15px;
 }

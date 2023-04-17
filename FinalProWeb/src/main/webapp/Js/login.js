@@ -10,3 +10,6 @@ registerLink.addEventListener('click', ()=>{
 loginLink.addEventListener('click', ()=>{
     containerlogin.classList.remove('active');
 });
+
+
+  

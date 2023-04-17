@@ -15,11 +15,10 @@
     <!-- 連結CSS外部檔案 -->
     <link rel="stylesheet" href="./css/post.css">
     <link rel="stylesheet" href="./css/navbar&footer.css">
-    <!-- 連接Js外部檔案 -->
+    <!-- 連結Js外部檔案 -->
     <script src="./Js/index.js"></script>
     <!-- MDB頭像 -->
     <script type="text/javascript" src="./Js/mdb.min.js"></script>
-
 </head>
 
 <body>
@@ -49,12 +48,12 @@
                                     alt="Portrait of a Woman" loading="lazy" />
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="#">登入</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">個人資訊</a>
-                                </li>
+                                <li> 
+                                    <a class="dropdown-item" href="./login.html">登入</a> 
+                                </li> 
+                                <li> 
+                                    <a class="dropdown-item" href="./login.html">註冊</a> 
+                                </li> 
                             </ul>
                         </li>
                     </ul>
@@ -66,41 +65,41 @@
     <div class="container-post">
         <!-- 團名 -->
         <div class="GroupName">
-            <input type="text" placeholder="團名 : 活動名稱" id="activityTitle" name="">
+            <input type="text" placeholder="  團名 : 活動名稱  " class="activityTitle" id="activityTitle" name="">
         </div>
         <!-- 圖 & 文字說明 -->
         <div class="post-area">
             <!--Image-->
             <div class="post-Image">
-                <div class="mb-4 d-flex justify-content-center">
-                    <img src="./Images/logo.png" alt="example placeholder" id="pic" style="width: 600px;height: 400px;" />
-                </div>
+                <form action="/somewhere/to/upload" enctype="multipart/form-data">
+                    <img id="preview_progressbarTW_img" src="./Images/logo.png"/>
+                </form>
             </div>
             <!-- 文字表單 -->
             <div class="formfile">
                 <form action="">
                     <div class="location">
-                        <label for="">地點 :</label> 
+                        <label for="">地點 :</label>                        
                     </div>
                     <div>
                         <label for="activityTime">活動時間 :</label>
                     </div>
                     <div>
-                        <label for="">最晚審核時間 :</label>
+                        <label for="deadline">最晚審核時間 :</label>
                     </div>
-                    <div>
+                    <div style="display: flex;">
                         <label for="min">最低人數 :</label>
                     </div>
-                    <div>
+                    <div style="display: flex;">
                         <label for="max">人數上限 :</label>
                     </div>
-                    <div>
+                    <div style="display: flex;">
                         <label for="contact">聯絡方式 :</label>
                     </div>
                     <div>
                         <label>場地預約 :</label>
                     </div>
-                    
+
                     <div>
                         <label>等級推薦 :</label>
                     </div>
@@ -111,15 +110,12 @@
                     </div>
                 </form>
             </div>
-
-            <div class="activity-btn">
-                <div><button type="submit">我要報團</button></div>
-            </div>
-            
         </div>
-        
+        <div class="joinBtn">
+            <div><button type="submit">我要報團</button></div>
+        </div>
     </div>
-
+    
 </body>
 
 </html>

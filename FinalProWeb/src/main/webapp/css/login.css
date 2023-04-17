@@ -46,13 +46,16 @@
     width: 400px;
     color: #fff;
   }
-  .form h1{
+  .form .logo h1{
     margin-bottom: 50px;
     text-align: center;
+    color: #fff;
   }
-  .form h2{
-    margin-top: -10px ;
-    margin-bottom: 40px;
+  .form .logo a{
+    text-decoration: none;
+  }
+  .form .logo h1:hover{
+    color: #ffbf71;
   }
   .form input{
     width: 100%;
@@ -67,18 +70,19 @@
   .form .btn-group{
     margin-top: 30px;
   }
-  .form button{
+  .form .btn-group a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .form .btn-group button{
     font-size: 20px;
     border-radius: 5px;/* 邊框圓弧度 */
     border: none;/* 去邊框 */
     background-color: #ffbf71;
-    width: 190px;
+    width: 400px;
     padding: 10px 0;
     color:#fff;
     
-  }
-  .form button + button{
-    margin-left: 15px;
   }
   .form button:hover{
     background-color: #FFDEAD;

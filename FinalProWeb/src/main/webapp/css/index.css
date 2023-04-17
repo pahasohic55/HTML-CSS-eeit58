@@ -5,14 +5,6 @@
     height: 600px;
 }
 
-.btn3{
-    position:absolute;/* position位置 absolute絕對 */
-    left:450px;
-    top:70%;
-    color: #35302b;
-    background-color:#f7d095;
-    font-weight: bold;/* 粗體文字 */
-}
 .carousel-inner .words{
     color: aliceblue;
     font-size: 80px;
@@ -55,6 +47,7 @@
     margin-left: 350px; /* 將按鈕右邊間距 */
     margin-right: 500px;/* 將按鈕左邊間距 */
     background-color:#ffdca7;
+    color: black;
   }
 .container2 h1{
     flex: 1; /* 將文字區塊撐滿剩餘空間 */

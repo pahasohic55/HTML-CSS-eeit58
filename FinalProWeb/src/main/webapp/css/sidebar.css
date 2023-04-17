@@ -196,19 +196,16 @@ margin-right: 10px;
 a[href*="#home"]::before {
 content: "\f015" !important;
 }
-a[href*="#about"]::before {
-content: "\f129" !important;
+a[href*="#member"]::before {
+content: "\f007" !important;
 }
-a[href*="#events"]::before {
-content: "\f073" !important;
-}
-a[href*="#events"]::before {
+a[href*="#calendar"]::before {
 content: "\f073" !important;
 }
 a[href*="#team"]::before {
 content: "\f0c0" !important;
 }
-a[href*="#works"]::before {
+a[href*="#activity"]::before {
 content: "\f0b1" !important;
 }
 a[href*="#art"]::before {
@@ -217,7 +214,7 @@ content: "\f1fc" !important;
 a[href*="#services"]::before {
 content: "\f013" !important;
 }
-a[href*="#contact"]::before {
+a[href*="#post"]::before {
 content: "\f086" !important;
 }
 
