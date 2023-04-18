@@ -19,11 +19,17 @@ var linkTag4 = document.createElement('link');
 linkTag4.rel = 'stylesheet';
 linkTag4.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Noto+Sans+JP:wght@700&family=Noto+Sans+TC:wght@900&display=swap';
 
-// 將三個 <link> 標籤加入到 <head> 區域中
+// 第五個文字樣式 <link> 標籤
+var linkTag5 = document.createElement("link");
+linkTag5.rel = "stylesheet";
+linkTag5.href = "https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap";
+
+// 將<link> 標籤加入到 <head> 區域中
 document.head.appendChild(linkTag1);
 document.head.appendChild(linkTag2);
 document.head.appendChild(linkTag3);
 document.head.appendChild(linkTag4);
+document.head.appendChild(linkTag5);
 
 // 活動圖片上傳
 function readURL(input) {

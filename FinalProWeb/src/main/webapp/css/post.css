@@ -87,3 +87,6 @@ body{
     width: 100%;
     bottom: -15px;
 }
+#custom-h2{
+    font-size: 1.6em;
+}
