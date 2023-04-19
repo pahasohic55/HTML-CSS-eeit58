@@ -65,13 +65,19 @@ body{
     justify-content: space-around;/* 平均分配寬度和間距 */
     margin-top: 50px;/* margin外邊距 */
 }
-.btn2{
+.btnGroup .btn2{
     display: flex;
     justify-content: space-around;
 }
-.btn2 > div{
+.btnGroup .btn2 > div{
     margin-right: 150px;/* 按鈕間距 */
-    
+}
+.btnGroup .btn2 button{
+    background-color: #ffbf71;
+    width: 130px;
+}
+.btnGroup .btn2 button:hover{
+    background-color: #faa21d;
 }
 .joinBtn{
     display: flex;
@@ -81,6 +87,10 @@ body{
 .joinBtn button{
     width: 150px;
     height: 50px;
+    background-color: #ffbf71;
+}
+.joinBtn button:hover{
+    background-color: #faa21d;
 }
 .mb-3{
     position: absolute;/* 子元素 */

@@ -423,7 +423,6 @@ display: block;
   margin-right: 100px;
   border-radius: 10px;
   width: 150px;
-  border: none;/* 去邊框 */
   background-color: #ffbf71;
 }
 .btn-group button:hover{

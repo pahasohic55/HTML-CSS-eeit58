@@ -43,11 +43,21 @@
     display: flex;/* 並排 */
     justify-content: center; /* 將容器置中 */
 }
-.btn1 {
+.container2 .btn1{
     margin-left: 350px; /* 將按鈕右邊間距 */
     margin-right: 500px;/* 將按鈕左邊間距 */
-    background-color:#ffdca7;
-    color: black;
+    width: 100px;
+    border-radius: 10px;/* 邊框圓弧度 */
+    background-color: #ffbf71;
+    color: #3b3b3b;
+  }
+  .container2 .btn1:hover{
+    background-color: #f6a122;
+  }
+  .container2 .btn1 a{
+      /* 去底線 */
+    text-decoration: none;
+    color: #3b3b3b;
   }
 .container2 h1{
     flex: 1; /* 將文字區塊撐滿剩餘空間 */
