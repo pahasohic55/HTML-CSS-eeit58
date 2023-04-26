@@ -9,6 +9,7 @@
 .joinTeam-card-group{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 .card{
     width: 100%;

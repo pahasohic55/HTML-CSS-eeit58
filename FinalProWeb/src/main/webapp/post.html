@@ -48,12 +48,12 @@
                                     alt="Portrait of a Woman" loading="lazy" />
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li> 
-                                    <a class="dropdown-item" href="./login.html">登入</a> 
-                                </li> 
-                                <li> 
-                                    <a class="dropdown-item" href="./login.html">註冊</a> 
-                                </li> 
+                                <li>
+                                    <a class="dropdown-item" href="./login.html">登入</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./login.html">註冊</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -72,7 +72,7 @@
             <!--Image-->
             <div class="post-Image">
                 <form action="/somewhere/to/upload" enctype="multipart/form-data">
-                    <img id="preview_progressbarTW_img" src="./Images/image.png"/>
+                    <img id="preview_progressbarTW_img" src="./Images/image.png" />
                 </form>
             </div>
             <!-- 文字表單 -->
@@ -174,13 +174,16 @@
         </div>
         <div class="btnGroup">
             <div class="btn2">
-            <input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png" >
+
+                <input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png">
+                <div><button type="submit" class="upload">上傳</button></div>
                 <div><button type="submit">確認發文</button></div>
                 <div><a href="./index.html"><button>取消發文</button></a></div>
+                
             </div>
         </div>
     </div>
-    
+    <script src="./Js/test.js"></script>
 </body>
 
 </html>

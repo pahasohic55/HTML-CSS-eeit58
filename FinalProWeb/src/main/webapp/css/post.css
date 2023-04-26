@@ -17,9 +17,6 @@ body{
     border-radius: 20px;/* 邊框圓弧度 */
     border:5px solid rgb(255, 255, 255);
 }
-.container-post button{
-    border-radius: 10px;/* 邊框圓弧度 */
-}
 .GroupName{
     padding-top: 60px;/* padding內邊距 */
     padding-left: 550px;
@@ -63,22 +60,20 @@ body{
 .btnGroup{
     display: flex;
     justify-content: space-around;/* 平均分配寬度和間距 */
-    margin-top: 50px;/* margin外邊距 */
+    margin-top: 30px;/* margin外邊距 */
 }
 .btnGroup .btn2{
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
 .btnGroup .btn2 > div{
-    margin-right: 150px;/* 按鈕間距 */
+    margin-right: 80px;/* 按鈕間距 */
 }
 .btnGroup .btn2 button{
-    background-color: #ffbf71;
-    width: 130px;
+    width: 100px;
 }
-.btnGroup .btn2 button:hover{
-    background-color: #faa21d;
-}
+
 .joinBtn{
     display: flex;
     justify-content: space-around;/* 平均分配寬度和間距 */

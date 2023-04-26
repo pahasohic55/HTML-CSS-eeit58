@@ -159,6 +159,7 @@ margin-right: 10px;
 }
 .sidebar-brand a {
   color: #ddd;
+  text-decoration: none;
 }
 .sidebar-brand a:hover {
   color: #fff;
@@ -183,39 +184,6 @@ margin-right: 10px;
 }
 .dropdown-menu.show {
   top: 0;
-}
-/*圖標&文字*/
-.nav.sidebar-nav li a::before {
-  font-family: fontawesome;/* 勿動 */
-  content: "\f12e";
-  vertical-align: baseline;
-  display: inline-block;
-  padding-right: 20px;
-  
-}
-a[href*="#home"]::before {
-content: "\f015" !important;
-}
-a[href*="#member"]::before {
-content: "\f007" !important;
-}
-a[href*="#calendar"]::before {
-content: "\f073" !important;
-}
-a[href*="#team"]::before {
-content: "\f0c0" !important;
-}
-a[href*="#activity"]::before {
-content: "\f0b1" !important;
-}
-a[href*="#art"]::before {
-content: "\f1fc" !important;
-}
-a[href*="#services"]::before {
-content: "\f013" !important;
-}
-a[href*="#post"]::before {
-content: "\f086" !important;
 }
 
 /*-------------------------------*/

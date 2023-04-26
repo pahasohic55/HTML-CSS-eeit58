@@ -4,22 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>會員資料</title>
-    <!-- 響應式網站 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Boostrap 導入程式 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <!-- sidebar 導入程式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
     <!-- 連結CSS外部檔案 -->
     <link rel="stylesheet" href="./css/sidebar.css">
     <!-- 連結Js外部檔案 -->
@@ -36,19 +24,20 @@
                 <div class="sidebar-header">
                     <img src="./Images/logo3.png" alt="">
                     <div class="sidebar-brand">
-                        <a href="#">Join揪羽球</a>
+                        <a href="./index.html">Join揪羽球</a>
                     </div>
                 </div>
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#member">會員資料</a></li>
+                <li><a href="./index.html">首頁</a></li>
+                <li><a href="./member.html">會員資料</a></li>
+
 
                 <li class="dropdown">
-                    <a href="#activity" class="dropdown-toggle" data-toggle="dropdown">活動<span class="caret"></span></a>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">活動<span class="caret"></span></a>
                     <ul class="dropdown-menu animated fadeInLeft" role="menu">
                         <div class="dropdown-header">所有活動</div>
-                        <li><a href="#calendar">日曆</a></li>
-                        <li><a href="#team">我報名的活動</a></li>
-                        <li><a href="#post">我發起的活動</a></li>
+                        <li><a href="./calendar.html">日曆</a></li>
+                        <li><a href="./participate.html">我報名的活動</a></li>
+                        <li><a href="./launch.html">我發起的活動</a></li>
                     </ul>
                 </li>
                 <li><a href="#art">管理活動</a></li>
@@ -87,43 +76,42 @@
                     <div class="member-area">
                         <div class="member member-PI">
 
-                            <form>
-
+                            <div>
                                 <legend>會員資料</legend><br><br>
                                 <div class="project">
                                     <label for="memberName">會員姓名</label>
-                                    <input type="text" id="memberName" name="memberName"><br><br>
+                                    <input type="text" id="memberName" name="memberName" readonly><br><br>
                                 </div>
                                 <div class="project">
                                     <label for="memberAccount">帳號</label>
-                                    <input type="email" id="email" name="memberAccount"><br><br>
+                                    <input type="email" id="email" name="memberAccount" readonly><br><br>
                                 </div>
                                 <div class="project">
                                     <label for="password">會員密碼</label>
-                                    <input type="password" id="password" name="password" required ><br><br>
+                                    <button id="changePwd" onclick="changePwd()">修改密碼</button><br><br>
                                 </div>
                                 <div class="project">
                                     <label for="phoneNumber">手機號碼</label>
-                                    <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+                                    <input type="text" id="phoneNumber" name="phoneNumber" readonly><br><br>
                                 </div>
                                 <div class="project">
                                     <label for="birthday">生日</label>
-                                    <input type="date" id="birthday" name="birthday" required><br><br>
+                                    <input type="date" id="birthday" name="birthday" readonly><br><br>
                                 </div>
                                 <div class="project">
                                     <label for="gender">性別</label>
-                                    <input type="radio" id="" name="gender" value="" checked required>
-                                    <label for="Mr.">男性</label>
-                                    <input type="radio" id="" name="gender" value="" checked required>
-                                    <label for="Ms.">女性</label>
+                                    <input type="radio" id="gender1" name="gender" value="1" checked readonly>
+                                    <label for="gender1">男性</label>
+                                    <input type="radio" id="gender2" name="gender" value="2" readonly>
+                                    <label for="gender2">女性</label>
                                 </div>
                                 <div class="btn-group">
-                                    <button type="submit">修改資料</button>
-                                    <button type="submit">儲存</button>
-                                    <button>取消</button>
+                                    <button id="modify" onclick="modify()">修改資料</button>
+                                    <button id="save" hidden onclick="save()">儲存</button>
+                                    <button id="cancel" hidden onclick="cancel()">取消</button>
                                 </div>
 
-                            </form>
+                            </div>
 
                         </div>
                     </div>
