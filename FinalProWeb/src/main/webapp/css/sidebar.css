@@ -345,6 +345,15 @@ display: block;
   width: 250px;
   height: 250px;
 }
+.member-avatar .text-center #file{
+  padding: 30px;
+  margin-left: 150px;
+  font-size: 18px;
+}
+.member-avatar .text-center #memberIconUpload{
+  margin-top: 10px;
+  font-size: 18px;
+}
 .select{/* 更換頭像按鈕 */
   position: absolute;
   left: 10px;
@@ -374,28 +383,44 @@ display: block;
   /* 會員資料單獨用 */
   top: 50px;
 }
+.member div{
+  float: left;
+  padding: 30px;
+}
+.member button{
+  border-radius: 10px;
+  background-color: rgba(254, 152, 50, 0.8);
+}
+.member button:hover{
+  background-color: #faa21d;
+}
+.member .project{
+  width: 50%;
+  height: 80px;
+  font-size: 22px;
+}
 .member .project label{
   width: 120px;
 }
 .member .project input{
-  
   border-radius: 5px;
 }
-
+.member .project #oldPwd{
+  margin-bottom: 40px;
+}
+.member .project #newPwd{
+  margin-bottom: 40px;
+}
 .btn-group{
   width: 100%;
   padding-top: 30px;
   justify-content: center;/* 水平置中 */
 }
 .btn-group button{
-  margin-right: 100px;
-  border-radius: 10px;
+  margin-left: 200px;
   width: 150px;
-  background-color: #ffbf71;
 }
-.btn-group button:hover{
-  background-color: #faa21d;
-}
+
 .container-calendar{
   position: relative;/* 父元素 */
   justify-content: center;/* 水平置中 */
