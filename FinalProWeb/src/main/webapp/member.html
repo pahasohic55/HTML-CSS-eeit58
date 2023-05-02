@@ -14,7 +14,7 @@
     <script src="./Js/index.js"></script>
     <script>
         var memberObj = sessionStorage.getItem('member');
-        var member = JSON.parse(memberObj);
+        var member = JSON.parse(memberObj); 
         $(function(){
 
             getData();
@@ -27,6 +27,7 @@
             $("#modify").prop("hidden","true");
             $("#save").removeAttr("hidden");
             $("#cancel").removeAttr("hidden");
+
         }
 
         function save(){
@@ -86,6 +87,10 @@
             $("#newPwd").after("<br>");
             $("#checknewPwd").after("<br><br>");
             $("#cancelChangeBtn").after("<br><br>");
+            const modify = document.getElementById('modify');
+            modify.style.marginLeft = "150px";
+            const save = document.getElementById('save'); 
+            save.style.marginLeft = "150px";
         }
 
         function cancelChangeBtn(){
@@ -96,7 +101,11 @@
             $("#pwdLab").removeAttr("hidden");
             $("#showPwdRow").removeAttr("hidden");
             $("#showPwdRow").after("<br><br>");
-
+            const modify = document.getElementById('modify');
+            modify.style.marginLeft = "0px";
+            const save = document.getElementById('save'); 
+            save.style.marginLeft = "-50px";
+            
         }
 
         function checkpw(){
